@@ -33,8 +33,8 @@ public class Main extends Application {
 
 
         // never hardcode credentials
-        String uName = "root";
-        String passwd = "Zk60yfk4";
+        String uName = "";
+        String passwd = "";
 
         try {
             connection = DriverManager.getConnection(mysqlURL, uName, passwd);

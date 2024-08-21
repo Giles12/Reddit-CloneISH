@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="CommunityPageController" spacing="10" alignment="TOP_CENTER" prefHeight="400" prefWidth="600">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <TextField fx:id="searchBar" promptText="Search Communities..." maxWidth="200"/>
+    <ListView fx:id="communityList" prefHeight="200" prefWidth="200" onMouseClicked="#handleCommunityClick"/>
+    <HBox spacing="10" fx:id="buttonBox" visible="false">
+        <Button text="Join" fx:id="joinButton" onAction="#handleJoin"/>
+        <Button text="Leave" fx:id="leaveButton" onAction="#handleLeave"/>
+        <Button text="View" fx:id="viewButton" onAction="#handleView"/>
+    </HBox>
+    <Button text="Create New Community" fx:id="createCommunityButton" onAction="#handleCreateCommunity"/>
+    <Button text="Front Page" fx:id="backToFrontPageBttn" onAction="#handleBack"/>
+</VBox>
+

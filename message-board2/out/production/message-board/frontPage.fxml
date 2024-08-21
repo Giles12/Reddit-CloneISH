@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.9" maxHeight="400.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FrontPageController">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+        <ListView fx:id="frontPagePosts" layoutY="51.0" prefHeight="200.0" prefWidth="598.0" AnchorPane.bottomAnchor="104.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="51.0" />
+    </AnchorPane>
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="600.0" spacing="10">
+        <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#handleLogout" style="-fx-background-color: red; -fx-text-fill: white;" text="Logout">
+            <HBox.margin>
+                <Insets left="10.0" />
+            </HBox.margin>
+        </Button>
+        <HBox alignment="CENTER_RIGHT" spacing="10">
+            <Button fx:id="findCommBttn" mnemonicParsing="false" onAction="#goToCommunityPage" text="View Communities" />
+            <Button fx:id="createPostBttn" alignment="BOTTOM_CENTER" mnemonicParsing="false" onAction="#goToCreatePostView" text="Create Post" />
+        </HBox>
+    </HBox>
+</SplitPane>

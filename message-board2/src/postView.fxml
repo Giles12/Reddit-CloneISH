@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="PostViewController" spacing="10" prefHeight="400.0" prefWidth="600.0">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <Label fx:id="postTitle" text="Post Title" style="-fx-font-size: 24px; -fx-padding: 10px;"/>
+    <TextArea fx:id="postBody" prefHeight="200" wrapText="true" editable="false"/>
+    <ListView fx:id="commentsList" prefHeight="200" prefWidth="200"/>
+    <HBox spacing="10">
+        <Button fx:id="backButton" mnemonicParsing="false" text="Back" onAction="#handleBackButton"/>
+        <Button fx:id="replyButton" mnemonicParsing="false" text="Reply" onAction="#handleReplyButton"/>
+    </HBox>
+</VBox>
